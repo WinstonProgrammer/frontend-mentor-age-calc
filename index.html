@@ -24,6 +24,7 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      @import url(https://fonts.google.com/specimen/Poppins);
     </style>
   </head>
   <body>
@@ -35,7 +36,41 @@
     </div>
 
     <div class="container">
-      Day DD Month MM Year YYYY -- years -- months -- days
+      <form>
+        <div class="time-input">
+          <label id="day-label" for="day-field">Day</label><br />
+          <input
+            id="day-field"
+            type="text"
+            name="day"
+            placeholder="DD"
+            required
+          />
+        </div>
+
+        <div class="time-input">
+          <label for="month-field">Month</label><br />
+          <input
+            id="month-field"
+            type="text"
+            name="month"
+            placeholder="MM"
+            required
+          />
+        </div>
+
+        <div class="time-input">
+          <label for="year-field">Year</label><br />
+          <input
+            id="year-field"
+            type="text"
+            name="year"
+            placeholder="YYYY"
+            required
+          />
+        </div>
+      </form>
+      -- years -- months -- days
     </div>
   </body>
 </html>
